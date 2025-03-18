@@ -5215,3 +5215,41 @@ body.dark-mode {
 .dark-mode #dark-mode-toggle:hover {
   background-color: #ddd;
 }
+/* General dark mode styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* Ensure all text inside dark mode elements turns white */
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4,
+.dark-mode h5,
+.dark-mode h6,
+.dark-mode p,
+.dark-mode a {
+  color: #ffffff !important;
+}
+
+/* Change link colors to a softer shade */
+.dark-mode a {
+  color: #bb86fc !important;
+}
+
+/* Navbar styles */
+.dark-mode .navbar {
+  background-color: #1e1e1e;
+}
+
+/* Footer background fix */
+.dark-mode .footer-container {
+  background-color: #1e1e1e;
+}
+
+/* Make sure button text remains visible */
+.dark-mode button {
+  color: #121212;
+  background-color: #ffffff;
+}

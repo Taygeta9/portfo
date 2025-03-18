@@ -18,28 +18,6 @@
   <title>Polini About</title>  
 
 <link href="./static/main.3f6952e4.css" rel="stylesheet"></head>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const toggleButton = document.getElementById("dark-mode-toggle");
-    const body = document.body;
-    
-    // Load dark mode preference
-    if (localStorage.getItem("dark-mode") === "enabled") {
-      body.classList.add("dark-mode");
-    }
-
-    toggleButton.addEventListener("click", function () {
-      body.classList.toggle("dark-mode");
-
-      // Save user preference
-      if (body.classList.contains("dark-mode")) {
-        localStorage.setItem("dark-mode", "enabled");
-      } else {
-        localStorage.setItem("dark-mode", "disabled");
-      }
-    });
-  });
-</script>
 
 <body class="">
 <div id="site-border-left"></div>
@@ -145,6 +123,13 @@
   ga('send', 'pageview');
 </script>
 
---> <script type="text/javascript" src="./static/main.70a66962.js"></script></body>
-
+--> <script type="text/javascript" src="./static/main.70a66962.js"></script>
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    if (localStorage.getItem("dark-mode") === "enabled") {
+      document.body.classList.add("dark-mode");
+    }
+  });
+  </script>
+</body>
 </html>
