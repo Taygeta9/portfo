@@ -25,6 +25,7 @@
 <div id="site-border-top"></div>
 <div id="site-border-bottom"></div>
  <!-- Add your content of header -->
+<button id="dark-mode-toggle">🌙 Dark Mode</button>
 <header>
   <nav class="navbar  navbar-fixed-top navbar-default">
     <div class="container">
@@ -147,6 +148,14 @@
   ga('send', 'pageview');
 </script>
 
---> <script type="text/javascript" src="./static/main.70a66962.js"></script></body>
+--> <script type="text/javascript" src="./static/main.70a66962.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    if (localStorage.getItem("dark-mode") === "enabled") {
+      document.body.classList.add("dark-mode");
+    }
+  });
+</script>
+</body>
 
 </html>
