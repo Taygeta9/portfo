@@ -76,29 +76,6 @@
      movingBackgroundImage();
   });
 </script>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const toggleButton = document.getElementById("dark-mode-toggle");
-    const body = document.body;
-
-    // Apply dark mode if it's saved in localStorage
-    if (localStorage.getItem("dark-mode") === "enabled") {
-      body.classList.add("dark-mode");
-    }
-
-    // Toggle dark mode and save preference
-    toggleButton.addEventListener("click", function () {
-      body.classList.toggle("dark-mode");
-
-      if (body.classList.contains("dark-mode")) {
-        localStorage.setItem("dark-mode", "enabled");
-      } else {
-        localStorage.setItem("dark-mode", "disabled");
-      }
-    });
-  });
-</script>
-
 
 <script type="text/javascript" src="./static/main.70a66962.js"></script></body>
 
