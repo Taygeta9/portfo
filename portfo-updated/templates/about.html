@@ -18,6 +18,28 @@
   <title>Polini About</title>  
 
 <link href="./static/main.3f6952e4.css" rel="stylesheet"></head>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggleButton = document.getElementById("dark-mode-toggle");
+    const body = document.body;
+    
+    // Load dark mode preference
+    if (localStorage.getItem("dark-mode") === "enabled") {
+      body.classList.add("dark-mode");
+    }
+
+    toggleButton.addEventListener("click", function () {
+      body.classList.toggle("dark-mode");
+
+      // Save user preference
+      if (body.classList.contains("dark-mode")) {
+        localStorage.setItem("dark-mode", "enabled");
+      } else {
+        localStorage.setItem("dark-mode", "disabled");
+      }
+    });
+  });
+</script>
 
 <body class="">
 <div id="site-border-left"></div>
@@ -27,6 +49,7 @@
  <!-- Add your content of header -->
 <header>
   <nav class="navbar  navbar-fixed-top navbar-default">
+    <button id="dark-mode-toggle">🌙 Dark Mode</button>
     <div class="container">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
           <span class="sr-only">Toggle navigation</span>

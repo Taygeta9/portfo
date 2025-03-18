@@ -5172,3 +5172,46 @@ textarea {
   margin-right: 5px;
 }
 /*# sourceMappingURL=main.70a66962.map*/
+
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.dark-mode .navbar {
+  background-color: #1e1e1e;
+}
+
+.dark-mode a {
+  color: #bb86fc;
+}
+
+.dark-mode .footer-container {
+  background-color: #1e1e1e;
+}
+#dark-mode-toggle {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+#dark-mode-toggle:hover {
+  background-color: #555;
+}
+
+.dark-mode #dark-mode-toggle {
+  background-color: #fff;
+  color: #333;
+}
+
+.dark-mode #dark-mode-toggle:hover {
+  background-color: #ddd;
+}
